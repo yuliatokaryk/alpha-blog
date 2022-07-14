@@ -1,1 +1,65 @@
 @import 'bootstrap/dist/css/bootstrap';
+
+$gray: #d0d2d1;
+$ligth: antiquewhite;
+$dark-gray: #444444;
+$dark: rgb(15, 15, 15);
+
+body {
+  background-color: $gray;
+  color: $dark;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+
+#logo {
+  color: antiquewhite!important;
+  font-family: 'Libre Baskerville', serif!important;
+  letter-spacing: -4px!important;
+}
+
+//header
+
+.navbar {
+  background-color: $dark!important;
+}
+
+.nav-link {
+  color: antiquewhite!important;
+}
+
+//header
+
+// home page
+.jumbotron {
+  padding: 5%!important;
+  height: 700px;
+  background-image: url("books.jpg")!important;
+  background-repeat: no-repeat!important;
+  background-size: cover;
+}
+
+.button {
+  border: none;
+  background-color: $dark-gray!important;
+  color: $gray;
+}
+
+.button:hover {
+  background-color: $dark!important;
+  color: $gray;
+}
+
+//footer
+.main-footer {
+  background-color: $dark;
+  color: $ligth!important;
+  font-size: xx-small;
+}
