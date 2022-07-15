@@ -63,3 +63,12 @@ a {
   color: $ligth!important;
   font-size: xx-small;
 }
+
+.return, .return a {
+  color: $dark-gray;
+  letter-spacing: 4px;
+}
+
+.return a:hover {
+  color: $dark;
+}
