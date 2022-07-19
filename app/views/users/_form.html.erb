@@ -24,7 +24,7 @@
           <%= f.label :password, for:"exampleFormControlTextarea1", class:"form-label" %>
           <%= f.password_field :password, class:"form-control", id:"exampleFormControlTextarea1" %>
         </div>
-        <%= f.submit(@user,new_record ? "Sing up" : "Update account"), class:"btn btn-success" %>
+        <%= f.submit(@user.new_record ? "Sing up" : "Update account"), class:"btn btn-success" %>
       <% end %>
     </div>
   </div>

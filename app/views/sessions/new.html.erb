@@ -1,13 +1,9 @@
-<h1 class="text-center m-3">Edit your profile</h1>
+<h1> Login in </h1>
 
 <div class="container">
   <div class="row justify-content-md-center">
     <div class="col-8 m-4">
-      <%= form_with(model: @user) do |f| %>
-        <div class="mb-3">
-          <%= f.label :username, for:"exampleFormControlInput1", class:"form-label" %>
-          <%= f.text_field :username,  class:"form-control", id:"exampleFormControlInput1", placeholder:"Enter username" %>
-        </div>
+      <%= form_with(scope: :session, url:login_path) do |f| %>
         <div class="mb-3">
           <%= f.label :email, for:"exampleFormControlTextarea2", class:"form-label" %>
           <%= f.email_field :email, class:"form-control", id:"exampleFormControlTextarea2" %>
@@ -16,10 +12,11 @@
           <%= f.label :password, for:"exampleFormControlTextarea1", class:"form-label" %>
           <%= f.password_field :password, class:"form-control", id:"exampleFormControlTextarea1" %>
         </div>
-        <%= f.submit "Update account", class:"btn btn-success" %>
+        <%= f.submit "Log in", class:"btn btn-success" %>
       <% end %>
     </div>
   </div>
 </div>
-
-<%= link_to "Delete profile", user_path(current_user), class: "dropdown-item text-danger", method: :delete, data: { confirm: "Are you sure?" } %> 
+<div class="text-center return">
+  <p>[ <%= link_to 'Return to articles', articles_path %> ]</p>
+</div>
