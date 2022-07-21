@@ -1,9 +1,5 @@
 @import 'bootstrap/dist/css/bootstrap';
-
-$gray: #d0d2d1;
-$ligth: antiquewhite;
-$dark-gray: #444444;
-$dark: rgb(15, 15, 15);
+@import 'variables';
 
 body {
   background-color: $gray;
@@ -84,15 +80,15 @@ a {
   .flickr_pagination .current {
     font-style: normal;
     font-weight: bold;
-    color: #ff0084; }
+    color: $dark-gray; }
   .flickr_pagination a {
     border: 1px solid #dddddd;
-    color: #0063dc;
+    color: $dark;
     text-decoration: none; }
     .flickr_pagination a:hover, .flickr_pagination a:focus {
-      border-color: #003366;
-      background: #0063dc;
-      color: white; }
+      border-color: $dark;
+      background: $dark-gray;
+      color: $gray; }
   .flickr_pagination .page_info {
     color: #aaaaaa;
     padding-top: 0.8em; }
