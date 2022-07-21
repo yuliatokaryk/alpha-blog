@@ -21,11 +21,11 @@
             [ <%= current_user.username %> ]
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><%= link_to "My profile", user_path(current_user), class:"dropdown-item" %></li>
-            <li><%= link_to "Edit profile", edit_user_path(current_user), class:"dropdown-item" %></li>
-            <li><%= link_to "Log out", logout_path, class:"dropdown-item", method: :delete %></li>
+            <li><%= link_to t("my_profile"), user_path(current_user), class:"dropdown-item" %></li>
+            <li><%= link_to t("edit_profile"), edit_user_path(current_user), class:"dropdown-item" %></li>
+            <li><%= link_to t("logout"), logout_path, class:"dropdown-item", method: :delete %></li>
             <li><hr class="dropdown-divider"></li>
-            <li><%= link_to "Create article", new_article_path, class:"dropdown-item" %></li>
+            <li><%= link_to t("create_article"), new_article_path, class:"dropdown-item" %></li>
           </ul>
         </li>
         <% end %>

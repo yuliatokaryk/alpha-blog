@@ -27,6 +27,9 @@ uk:
   articles: Статті
   bloggers: Блогери
   no_articles: Поки немає статтей.
+  title: Назва
+  description: Текст
+  done: Готово
   
   welcome_back: З поверненням!
   please_login: авторизуйтеся для подальших дій
@@ -40,9 +43,14 @@ uk:
   article_updated: Стаття успішно відредагована
   error_not_permision: Ви можете редагувати або видаляти тільки власні статті
   login_error: Ви ввели невірні дані
-  login_success: Ви ввійшли в аккаунд
+  login_success: Ви ввійшли в аккаунт
   logged_out: Ви вийшли з аккаунту
   welcome_to: Ласкаво просимо до BookStreet
   user_update: Ваші дані було оновлено
   user_delete: Ваш аккаунд видалено
   error_not_permision_user: Ви можете редагувати або видаляти тільки власний аккаунт
+  sure: Ви впевнені?
+  my_profile: Мій профіль
+  edit_profile: Редагувати профіль
+  logout: Вийти
+  create_article: Написати статтю

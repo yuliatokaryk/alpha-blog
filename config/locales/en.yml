@@ -33,6 +33,9 @@ en:
   username: Username
   error: Error!
   return: Return to articles
+  title: Title
+  description: Text
+  done: Done
 
   login_require: You must be logged in to perform that action
   article_created: Article was created successfully
@@ -45,3 +48,8 @@ en:
   user_update: Your accout information was updated
   user_delete: Account was deleted
   error_not_permision_user: You can only edit or delete your own profile
+  sure: Are you sure?
+  my_profile: My profile
+  edit_profile: Edit profile
+  logout: Log out
+  create_article: Create article
