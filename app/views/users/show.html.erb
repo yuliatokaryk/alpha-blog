@@ -1,5 +1,7 @@
-<h2 class="text-center m-4"><%= @user.username %></h2>
-<%= image_tag @img, alt: 'icon' %>
+<div class="text-center">
+  <h2 class="m-4"><%= @user.username %></h2>
+  <%= image_tag @img, alt: 'icon', width:"250px" %>
+</div>
 <% if logged_in? && @user == current_user %>
   <%= link_to t("edit_profile"), edit_user_path(@user), class:"text-center m-2" %>
   <%= link_to t("create_article"), new_article_path, class:"text-center m-3" %>
