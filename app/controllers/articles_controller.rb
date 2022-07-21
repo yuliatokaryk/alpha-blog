@@ -53,7 +53,7 @@ class ArticlesController < ApplicationController
   end
 
   def require_same_user
-    if current_user != @article.user
+    if current_user != @article.user || current_user.admin == false
       flash[:alert] = t("error_not_permision")
       redirect_to @article
     end
