@@ -33,3 +33,15 @@ en:
   username: Username
   error: Error!
   return: Return to articles
+
+  login_require: You must be logged in to perform that action
+  article_created: Article was created successfully
+  article_updated: Article was updated successfully
+  error_not_permision: You can only edit or delete your own article
+  login_error: There was something wrong with your login details
+  login_success: Logged in successfully
+  logged_out: Logged out
+  welcome_to: Welcome to the BookStreet
+  user_update: Your accout information was updated
+  user_delete: Account was deleted
+  error_not_permision_user: You can only edit or delete your own profile
