@@ -2,11 +2,13 @@
 <div class="container">
   <div class="row">
     <% @users.each do |user| %>
-      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 ">
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
         <div class="card shadow p-2 mb-5 bg-white rounded">
-          <%= gravatar_for user, size: 100 %>
-          <div class="card-body">
-            <h5 class="card-title text-center"><%= user.username %></h5>
+          <div class="text-center">
+            <%= image_tag "#{user.number.to_i}.png", alt:'icon', width:"200px" %>
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title"><%= user.username %></h5>
             <p class="card-text"><%= t("has") %>: <%= user.articles.count %>. <%= t("joined") %> <%= time_ago_in_words(user.created_at) %> <%= t("ago") %>.</p>
             <%= link_to t("view_profile"), user, class:"btn button-w" %>
           </div>

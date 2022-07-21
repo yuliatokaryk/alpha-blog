@@ -4,7 +4,6 @@ class UsersController < ApplicationController
   before_action :require_same_user, only: [:edit, :update, :destroy]
 
   def show
-    @img = "#{@user.number.to_i}.png"
     @articles = @user.articles
   end
 

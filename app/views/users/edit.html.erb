@@ -1,5 +1,7 @@
-<h1 class="text-center m-4"><%= t("edit_profile") %></h1>
-
+<div class="text-center m-4">
+  <h1><%= t("edit_profile") %></h1>
+  <%= image_tag "#{@user.number.to_i}.png", alt: 'icon', width:"200px" %>
+</div>
 <div class="container">
   <div class="row justify-content-md-center">
     <div class="col-8 m-4">

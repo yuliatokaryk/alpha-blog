@@ -1,6 +1,6 @@
 <div class="text-center">
   <h2 class="m-4"><%= @user.username %></h2>
-  <%= image_tag @img, alt: 'icon', width:"250px" %>
+  <%= image_tag "#{@user.number.to_i}.png", alt: 'icon', width:"250px" %>
 </div>
 <% if logged_in? && @user == current_user %>
   <%= link_to t("edit_profile"), edit_user_path(@user), class:"text-center m-2" %>
