@@ -1,10 +1,10 @@
 <div class="jumbotron">
-  <h1 class="display-4">Hello!</h1>
-  <p class="lead">Welcome to BookStreet! If you are in love with books like we are, then this blog is for you! </p>
+  <h1 class="display-4"><%= t(".hello") %></h1>
+  <p class="lead"><%= t(".welcome") %></p>
   <hr class="my-4">
-  <p><i>“Books are a uniquely portable magic”</i><br>Stephen King</p>
+  <p><i>"<%= t(".quote") %></i>"<br><%= t(".author") %></p>
   <p class="lead">
-    <%= link_to "Log in", login_path, class:"btn btn-lg button", role:"button" %>
-    <%= link_to "Sign up!", signup_path, class:"btn btn-lg button", role:"button" %>
+    <%= link_to t("login"), login_path, class:"btn btn-lg button", role:"button" %>
+    <%= link_to t("signup"), signup_path, class:"btn btn-lg button", role:"button" %>
   </p>
 </div>
