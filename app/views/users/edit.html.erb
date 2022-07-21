@@ -16,10 +16,9 @@
           <%= f.label :password, for:"exampleFormControlTextarea1", class:"form-label" %>
           <%= f.password_field :password, class:"form-control", id:"exampleFormControlTextarea1" %>
         </div>
-        <%= f.submit "Update account", class:"btn btn-success" %>
+        <%= f.submit "Update account", class:"btn button" %>
       <% end %>
+      <%= link_to "Delete profile", user_path(current_user), class: "mt-3 dropdown-item text-danger", method: :delete, data: { confirm: "Are you sure?" } %> 
     </div>
   </div>
 </div>
-
-<%= link_to "Delete profile", user_path(current_user), class: "dropdown-item text-danger", method: :delete, data: { confirm: "Are you sure?" } %> 
