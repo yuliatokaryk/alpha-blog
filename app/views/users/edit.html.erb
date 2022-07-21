@@ -18,6 +18,10 @@
           <%= f.label t("password"), for:"exampleFormControlTextarea1", class:"form-label" %>
           <%= f.password_field :password, class:"form-control", id:"exampleFormControlTextarea1" %>
         </div>
+        <div class="mb-3">
+          <%= f.label t("about"), for:"exampleFormControlTextarea3", class:"form-label" %>
+          <%= f.text_area :about, class:"form-control", id:"exampleFormControlTextarea3", rows:"10", placeholder:t("about_plch") %>
+        </div>
         <%= f.submit t("done"), class:"btn button" %>
       <% end %>
       <%= link_to t("delete_profile"), user_path(current_user), class: "mt-3 dropdown-item text-danger", method: :delete, data: { confirm: "Are you sure?" } %> 

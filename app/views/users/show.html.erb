@@ -1,12 +1,13 @@
 <div class="text-center">
   <h2 class="m-4"><%= @user.username %></h2>
   <%= image_tag "#{@user.number.to_i}.png", alt: 'icon', width:"250px" %>
+  <p><%= @user.about %></p>
 </div>
 <% if logged_in? && @user == current_user %>
   <%= link_to t("edit_profile"), edit_user_path(@user), class:"text-center m-2" %>
   <%= link_to t("create_article"), new_article_path, class:"text-center m-3" %>
 <% end %>
-  <h3 class="text-center m-3">
+<h3 class="text-center m-3">
   <% if @user.articles.any? %>
     <%= t("articles") %></h3>
     <%= render 'articles/article' %>

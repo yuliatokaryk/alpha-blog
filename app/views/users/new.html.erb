@@ -26,6 +26,10 @@
           <%= f.label t("password"), for:"exampleFormControlTextarea1", class:"form-label" %>
           <%= f.password_field :password, class:"form-control", id:"exampleFormControlTextarea1" %>
         </div>
+        <div class="mb-3">
+          <%= f.label t("about"), for:"exampleFormControlTextarea3", class:"form-label" %>
+          <%= f.text_area :about, class:"form-control", id:"exampleFormControlTextarea3", rows:"5", placeholder:t("about_plch") %>
+        </div>
         <%= f.submit t("signup"), class:"btn button" %>
       <% end %>
     </div>
