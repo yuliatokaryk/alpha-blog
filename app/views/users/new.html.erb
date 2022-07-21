@@ -1,4 +1,3 @@
-<h1 class="text-center m-3"><%= t("new_user") %></h1>
 <% if @user.errors.any? %>
   <div class="alert alert-danger alert-dismissible fade show" role="alert">
     <h4 class="alert-heading"><%= t("error") %></h4>
@@ -8,6 +7,8 @@
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
 <% end %>
+
+<h1 class="text-center m-4"><%= t("new_user") %></h1>
 
 <div class="container">
   <div class="row justify-content-md-center">
