@@ -1,21 +1,21 @@
-<h1 class="text-center m-3"> Welcome back!</h1>
-<h3 class="text-center m-3">please log in for further actions</h3>
+<h1 class="text-center m-3"><%= t("welcome_back") %></h1>
+<h3 class="text-center m-3"><%= t("please_login") %></h3>
 
 <div class="container">
   <div class="row justify-content-md-center">
     <div class="col-8 m-4">
       <%= form_with(scope: :session, url:login_path) do |f| %>
         <div class="mb-3">
-          <%= f.label :email, for:"exampleFormControlTextarea2", class:"form-label" %>
+          <%= f.label t("email"), for:"exampleFormControlTextarea2", class:"form-label" %>
           <%= f.email_field :email, class:"form-control", id:"exampleFormControlTextarea2" %>
         </div>
         <div class="mb-3">
-          <%= f.label :password, for:"exampleFormControlTextarea1", class:"form-label" %>
+          <%= f.label t("password"), for:"exampleFormControlTextarea1", class:"form-label" %>
           <%= f.password_field :password, class:"form-control", id:"exampleFormControlTextarea1" %>
         </div>
-        <%= f.submit "Log in", class:"btn button" %>
-        <small>or</small>
-        <%= link_to "Sign up!", signup_path, class:"btn button" %>
+        <%= f.submit t("login"), class:"btn button" %>
+        <small><%= t("or") %></small>
+        <%= link_to t("signup"), signup_path, class:"btn button" %>
       <% end %>
     </div>
   </div>

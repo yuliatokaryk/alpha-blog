@@ -6,8 +6,8 @@
 <% end %>
   <h3 class="text-center m-3">
   <% if @user.articles.any? %>
-    Articles</h3>
+    <%= t("articles") %></h3>
     <%= render 'articles/article' %>
   <% else %>
-    No articles yet.</h3>
+    <%= t("no_articles") %></h3>
 <% end %>

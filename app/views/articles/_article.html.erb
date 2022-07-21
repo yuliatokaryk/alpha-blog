@@ -3,20 +3,20 @@
     <div class="row justify-content-md-center">
       <div class="col-10 mt-4">
         <div class="card text-center shadow mb-5 bg-body rounded">
-          <div class="card-header font-italic">
-            by <%= article.user ? article.user.username : "unknown" %>
+          <div class="card-header">
+            <i><%= t("by") %> <%= article.user ? article.user.username : t("unknown") %></i>
           </div>
           <div class="card-body">
           <h5 class="card-title"><%= article.title %></h5>
           <p class="card-text"><%= truncate(article.description, length: 100) %></p>
-          <%= link_to 'Read', article_path(article), class:"btn button" %>
+          <%= link_to t("read"), article_path(article), class:"btn button-w" %>
           <% if logged_in? && article.user == current_user %>
-            <%= link_to 'Edit', edit_article_path(article), class:"btn btn-outline-success" %> 
-            <%= link_to 'Delete', article_path(article), method: :delete, data: { confirm: "Are you sure?" }, class:"btn btn-outline-danger" %> 
+            <%= link_to t("edit"), edit_article_path(article), class:"btn btn-outline-success" %> 
+            <%= link_to t("delete"), article_path(article), method: :delete, data: { confirm: "Are you sure?" }, class:"btn btn-outline-danger" %> 
           <% end %>
           </div>
           <div class="card-footer text-muted">
-            <small>Created <%= time_ago_in_words(article.created_at) %> ago.</small>
+            <small><%= t("created") %> <%= time_ago_in_words(article.created_at) %> <%= t("ago") %></small>
           </div>
         </div>
       </div>

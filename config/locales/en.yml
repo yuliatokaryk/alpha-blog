@@ -5,7 +5,31 @@ en:
       welcome: Welcome to BookStreet! If you are in love with books like we are, then this blog is for you!
       quote: Books are a uniquely portable magic
       author: Stephen King
+  all: All articles
+  read: Read
+  edit: Edit
+  delete: Delete
+  created: Created
+  ago: ago
+  by: by
+
+  all_bloggers: BookStreet Bloggers
+  has: Number of articles
+  joined: Joined
+  view_profile: View profile
+  unknown: unknown
   login: Log in
   signup: Sign up
+  email: Email
+  password: Password
+  or: or
   articles: Articles
   bloggers: Bloggers
+  no_articles: No articles yet.
+  
+  welcome_back: Welcome back!
+  please_login: please log in for further actions
+  new_user: Sign up for BookStreet!
+  username: Username
+  error: Error!
+  return: Return to articles

@@ -1,5 +1,4 @@
-<h1 class="text-center m-4">BookStreet Blogers</h1>
-
+<h1 class="text-center m-4"><%= t("all_bloggers") %></h1>
 <div class="container">
   <div class="row">
     <% @users.each do |user| %>
@@ -8,8 +7,8 @@
           <%= gravatar_for user, size: 100 %>
           <div class="card-body">
             <h5 class="card-title text-center"><%= user.username %></h5>
-            <p class="card-text">Has <%= pluralize(user.articles.count, 'article')%>. Joined <%= time_ago_in_words(user.created_at) %> ago.</p>
-            <%= link_to 'View profile', user, class:"btn button" %>
+            <p class="card-text"><%= t("has") %>: <%= user.articles.count %>. <%= t("joined") %> <%= time_ago_in_words(user.created_at) %> <%= t("ago") %>.</p>
+            <%= link_to t("view_profile"), user, class:"btn button-w" %>
           </div>
         </div>
       </div>

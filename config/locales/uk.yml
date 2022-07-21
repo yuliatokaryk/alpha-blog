@@ -5,8 +5,32 @@ uk:
       welcome: Ласкаво просимо до BookStreet! Якщо Ви любите книги так, як ми, тоді цей блог саме для Вас!
       quote: Книги - це унікальна переносна магія.
       author: Стівен Кінг
+
+  all: Всі статті
+  read: Читати
+  edit: Редагувати
+  delete: Видалити
+  created: Створено
+  ago: тому
+  by: автор
+  unknown: невідомий
+
+  all_bloggers: BookStreet Блогери
+  has: Кількість статтей
+  joined: Долучився
+  view_profile: Переглянути профіль
   login: Увійти
   signup: Зареєструватися
+  email: Електронна адреса
+  password: Пароль
+  or: або
   articles: Статті
   bloggers: Блогери
+  no_articles: Поки немає статтей.
   
+  welcome_back: З поверненням!
+  please_login: авторизуйтеся для подальших дій
+  new_user: Створіть аккаунт на BookStreet!
+  username: Ім'я користувача
+  error: Помилка!
+  return: Повернутися до статтей
