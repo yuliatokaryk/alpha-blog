@@ -4,6 +4,7 @@ class UsersController < ApplicationController
   before_action :require_same_user, only: [:edit, :update, :destroy]
 
   def show
+    @img = "#{@user.number.to_i}.png"
     @articles = @user.articles
   end
 
@@ -17,6 +18,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
+    @user.number = rand(1..18)
     if @user.save
       session[:user_id] = @user.id
       flash[:notice] = t("welcome_to")
