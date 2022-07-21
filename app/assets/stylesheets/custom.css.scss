@@ -2,72 +2,75 @@
 @import 'variables';
 
 body {
-  background-color: $gray;
-  color: $dark;
+  background-color: $pastel;
+  color: $black;
 }
 
 a {
   text-decoration: none;
+  color: $dark;
 }
 
-.wrapper {
-  width: 85%;
-  margin: 0 auto;
+a:hover {
+  color: $ochre;
 }
+
+h1, h2, h3 {
+  color: $ochre!important;
+}
+
+.button {
+  border: 2px solid $ochre!important;
+  border: none;
+  background-color: $pastel!important;
+  color: $ochre;
+}
+
+.button:hover {
+  background-color: $ochre!important;
+  color: $pastel;
+}
+
+//logo
 
 #logo {
-  color: antiquewhite!important;
+  color: $black!important;
   font-family: 'Libre Baskerville', serif!important;
   letter-spacing: -4px!important;
 }
 
-//header
+//navbar
 
 .navbar {
-  background-color: $dark!important;
+  background-color: $pastel!important;
 }
 
 .nav-link {
-  color: antiquewhite!important;
+  color: $black!important;
 }
 
-//header
+//home
 
-// home page
 .jumbotron {
   padding: 5%!important;
-  height: 700px;
-  background-image: url("books.jpg")!important;
-  background-repeat: no-repeat!important;
-  background-size: cover;
-}
-
-.button {
-  border: none;
-  background-color: $dark-gray!important;
-  color: $gray;
-}
-
-.button:hover {
-  background-color: $dark!important;
-  color: $gray;
 }
 
 //footer
+
 .main-footer {
-  background-color: $dark;
-  color: $ligth!important;
+  background-color: $grey;
+  color: $black!important;
   font-size: xx-small;
 }
 
+//return
+
 .return, .return a {
-  color: $dark-gray;
+  color: $ochre;
   letter-spacing: 4px;
 }
 
-.return a:hover {
-  color: $dark;
-}
+//pagination
 
 .flickr_pagination {
   text-align: center;
@@ -76,21 +79,20 @@ a {
   .flickr_pagination a, .flickr_pagination span, .flickr_pagination em {
     padding: 0.2em 0.5em; }
   .flickr_pagination .disabled {
-    color: #aaaaaa; }
+    color: $grey; }
   .flickr_pagination .current {
     font-style: normal;
     font-weight: bold;
-    color: $dark-gray; }
+    color: $grey; }
   .flickr_pagination a {
-    border: 1px solid #dddddd;
-    color: $dark;
+    color: $ochre;
     text-decoration: none; }
     .flickr_pagination a:hover, .flickr_pagination a:focus {
-      border-color: $dark;
-      background: $dark-gray;
-      color: $gray; }
+      border-color: $ochre;
+      background: $ochre;
+      color: $pastel; }
   .flickr_pagination .page_info {
-    color: #aaaaaa;
+    color: $ochre;
     padding-top: 0.8em; }
   .flickr_pagination .previous_page, .flickr_pagination .next_page {
     border-width: 2px; }

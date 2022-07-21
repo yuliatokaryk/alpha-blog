@@ -1,4 +1,4 @@
-<h1 class="text-center m-3">BookStreet Blogers</h1>
+<h1 class="text-center m-4">BookStreet Blogers</h1>
 
 <div class="container">
   <div class="row">
@@ -9,7 +9,7 @@
           <div class="card-body">
             <h5 class="card-title text-center"><%= user.username %></h5>
             <p class="card-text">Has <%= pluralize(user.articles.count, 'article')%>. Joined <%= time_ago_in_words(user.created_at) %> ago.</p>
-            <%= link_to 'View profile', user, class:"btn btn-outline-secondary" %>
+            <%= link_to 'View profile', user, class:"btn button" %>
           </div>
         </div>
       </div>
