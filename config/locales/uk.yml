@@ -2,7 +2,7 @@ uk:
   pages:
     home:
       hello: Вітаємо!
-      welcome: Ласкаво просимо до BookStreet! Якщо Ви любите книги так, як ми, тоді цей блог саме для Вас!
+      welcome: Ласкаво просимо до AlphaBlog!
       quote: Книги - це унікальна переносна магія.
       author: Стівен Кінг
 
@@ -15,7 +15,7 @@ uk:
   by: автор
   unknown: невідомий
 
-  all_bloggers: BookStreet Блогери
+  all_bloggers: AlphaBlog Блогери
   has: Кількість статтей
   joined: Долучився
   view_profile: Переглянути профіль
@@ -33,7 +33,7 @@ uk:
   
   welcome_back: З поверненням!
   please_login: авторизуйтеся для подальших дій
-  new_user: Створіть аккаунт на BookStreet!
+  new_user: Створіть аккаунт на AlphaBlog!
   username: Ім'я користувача
   error: Помилка!
   return: Повернутися до статтей
@@ -45,7 +45,7 @@ uk:
   login_error: Ви ввели невірні дані
   login_success: Ви ввійшли в аккаунт
   logged_out: Ви вийшли з аккаунту
-  welcome_to: Ласкаво просимо до BookStreet
+  welcome_to: Ласкаво просимо до AlphaBlog
   user_update: Ваші дані було оновлено
   user_delete: Ваш аккаунд видалено
   error_not_permision_user: Ви можете редагувати або видаляти тільки власний аккаунт
