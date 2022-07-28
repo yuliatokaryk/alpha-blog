@@ -1,10 +1,13 @@
 en:
+  navbar:
+    categories: Categories
+    new_category: Add category
   pages:
     home:
       hello: Hello!
       welcome: Welcome to AlphaBlog!
-      quote: Books are a uniquely portable magic
-      author: Stephen King
+      quote: The first step in blogging is not writing them but reading them
+      author: Jeff Jarvis
   all: All articles
   read: Read
   edit: Edit

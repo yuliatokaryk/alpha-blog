@@ -1,10 +1,13 @@
 uk:
+  navbar:
+    categories: Категорії
+    new_category: Додати категорію
   pages:
     home:
       hello: Вітаємо!
       welcome: Ласкаво просимо до AlphaBlog!
-      quote: Книги - це унікальна переносна магія.
-      author: Стівен Кінг
+      quote: Першим кроком у веденні блогу є не написання, а читання
+      author: Джефф Джарвіс
 
   all: Всі статті
   read: Читати
