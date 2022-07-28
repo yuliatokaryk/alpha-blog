@@ -2,6 +2,7 @@ en:
   navbar:
     categories: Categories
     new_category: Add category
+    
   pages:
     home:
       hello: Hello!
@@ -59,3 +60,5 @@ en:
   delete_profile: Delete profile
   about: About me
   about_plch: Write here some information about yourself.
+
+  prompt_category: Select one or more categories

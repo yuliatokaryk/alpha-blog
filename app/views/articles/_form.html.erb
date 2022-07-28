@@ -13,12 +13,17 @@
     <div class="col-8 m-4">
       <%= form_with(model: @article, local:true) do |f| %>
         <div class="mb-3">
-          <%= f.label t("title"), for:"exampleFormControlInput1", class:"form-label" %>
-          <%= f.text_field :title,  class:"form-control", id:"exampleFormControlInput1", placeholder:"Title"%>
+          <%= f.label t("title"), for:"title", class:"form-label" %>
+          <%= f.text_field :title,  class:"form-control", id:"title", placeholder:"Title"%>
         </div>
         <div class="mb-3">
-          <%= f.label t("description"), for:"exampleFormControlTextarea1", class:"form-label" %>
-          <%= f.text_area :description, class:"form-control", id:"exampleFormControlTextarea1", rows:"10", placeholder:"Description" %>
+          <%= f.label t("description"), for:"description", class:"form-label" %>
+          <%= f.text_area :description, class:"form-control", id:"description", rows:"10", placeholder:"Description" %>
+        </div>
+        <div class="mb-3">
+          <%= f.label :category, for:"category-select", class:"form-label" %>
+          <br>
+          <%= f.collection_select(:category_ids, Category.all, :id, :name, {:prompt => t("prompt_category")}, {multiple: true, class:"custom-select", id:"category-select"}) %>
         </div>
         <%= f.submit t("done"), class:"btn button" %>
       <% end %>
