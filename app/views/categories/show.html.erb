@@ -1,1 +1,9 @@
-<h1><%= @category.name %></h1>
+<h2 class="text-center m-4"><%= t("category") %>: #<%= @category.name %></h2>
+
+<h3 class="text-center m-3">
+  <% if @category.articles.any? %>
+    <%= t("articles") %></h3>
+    <%= render 'articles/article' %>
+  <% else %>
+    <%= t("no_articles") %></h3>
+<% end %>

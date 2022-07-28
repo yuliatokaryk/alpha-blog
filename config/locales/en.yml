@@ -62,3 +62,7 @@ en:
   about_plch: Write here some information about yourself.
 
   prompt_category: Select one or more categories
+  category: Category
+  edit_category: Edit category
+  new_category: Add new category
+  category_articles_count: Number of articles on this topic

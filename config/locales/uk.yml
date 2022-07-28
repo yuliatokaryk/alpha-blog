@@ -62,3 +62,7 @@ uk:
   about_plch: Напишіть тут щось про себе
 
   prompt_category: Оберіть одну або кілька категорій
+  category: Категорія
+  edit_category: Редагувати категорію
+  new_category: Створити нову категорію
+  category_articles_count: Кількість статтей за даною категорією
