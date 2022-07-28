@@ -5,6 +5,9 @@
           <div class="card-header">
             <%= image_tag "#{@article.user.number.to_i}.png", alt:'icon', width:"50px" %>
             <h3><%= @article.title %></h3>
+            <% if @article.categories.any? %>
+              <small><i><%= render @article.categories %></i></small> 
+            <% end %>
           </div>
           <div class="card-body">
           <p class="card-text"><%= @article.description %></p>

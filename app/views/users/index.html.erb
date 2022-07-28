@@ -1,4 +1,8 @@
 <h1 class="text-center m-4"><%= t("all_bloggers") %></h1>
+<div class="flickr_pagination">
+  <%= will_paginate @categories, :container => false %>
+</div>
+
 <div class="container">
   <div class="row">
     <% @users.reverse.each do |user| %>
@@ -16,4 +20,8 @@
       </div>
     <% end %>
   </div>
+</div>
+
+<div class="flickr_pagination">
+  <%= will_paginate @categories, :container => false %>
 </div>
